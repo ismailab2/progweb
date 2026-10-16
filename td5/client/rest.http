@@ -3,3 +3,47 @@ GET http://localhost:5000/
 
 ### Default API URL
 GET http://localhost:5000/api/
+
+### Register a new user
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "email": "test@example.com",
+    "password": "password123"
+}
+
+### Register a new user
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "email": "test1@example.com",
+    "password": "password123"
+}
+
+### Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "test@example.com",
+    "password": "password123"
+}
+
+### Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "test1@example.com",
+    "password": "password123"
+}
+
+
+### Get all contacts - Protected route
+GET http://localhost:5000/api/contacts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZDI1MjI2ZmQ3OWQ3ODFiNTk4ZjRjOSIsImVtYWlsIjoidGVzdDFAZXhhbXBsZS5jb20iLCJpYXQiOjE3OTIxNjg2MDgsImV4cCI6MTc5MjE3MjIwOH0.vT6OBRiYexTKrrHuG1fWShF4d8K1zuRpcoTilrAb_2M
+
+### doc
+http://localhost:5000/docs
